@@ -1,15 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 html, body{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
   display: grid;
-  grid-template-columns: 1fr 4fr;
-  grid-template-rows: 100%;
+  grid-template-columns: 300px 1fr;
 }
 
 .side-bar {
@@ -17,6 +19,8 @@ body {
   background-color: #0f766e;
   grid-template-rows: auto auto 1fr;
   gap: 20px;
+  position: sticky;
+  top: 0;
 }
 
 h1 {
@@ -39,31 +43,85 @@ h1 {
 
 .app-content {
   display: grid;
-  grid-template-rows: 1fr 4fr;
+  grid-template-rows: auto 1fr;
 }
 
 .ui-bar {
   display: grid;
   grid-template-rows: 1fr 1fr;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 3fr 2fr;
 }
 
 .ui-bar input {
-  width: 90%
+  width: 95%;
+}
+
+.media-buttons {
+  display: grid;
+  width: 95%;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  justify-content: space-between;
 }
 
 .media-buttons button {
   background-color: #0f766e;
-  padding: 8px 20px;
-  border-radius: 25px;
+  border-radius: 20px;
   color: white;
   border: none;
+  margin-bottom: 5px;
+  align-self: center;
+  padding: 10px 0px;
 }
 
 .ui-bar, .main-content {
   padding: 15px 0px 0px 15px;
 }
 
+.media-buttons {
+  justify-self: start;
+}
+
 .main-content {
   background-color: #e2e8f0;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-items: center;
+}
+
+.project-header {
+  grid-column: 1 / 2;
+  justify-self: start;
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-left: 40px;
+}
+
+.project-content {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-right: 30px;
+}
+
+.announce-header {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  justify-self: start;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.content-col-3 {
+  display: grid;
+}
+
+.project-card {
+  background-color: white;
+  border-radius: 5px;
+  border-left: solid;
+  border-color: #000080;
+  border-width: 7px;
+  padding: 30px;
 }
