@@ -140,7 +140,7 @@ h1 {
 
 .ui-bar {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto 1fr;
   grid-template-columns: 3fr 2fr;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -207,6 +207,25 @@ h1 {
 
 .media-buttons {
   justify-self: start;
+}
+
+.welcome-text::before {
+  content: "";
+  background: url("assets/cute-panda-with-coffee-cartoon-illustration-vector.webp");
+  width: 75px;
+  height: 75px;
+  float: left;
+  margin: 0 20px 0 0;
+  vertical-align: center;
+  border-radius: 100%;
+}
+
+.greeting {
+  font-size: 1rem;
+}
+
+.welcome-text {
+  font-size: 1.5rem;
 }
 
 .main-content {
