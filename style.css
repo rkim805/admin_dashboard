@@ -41,6 +41,98 @@ h1 {
   font-size: 1rem;
 }
 
+
+.home-btn::before {
+  content: "";
+  background: url("assets/home-outline.svg");
+  width: 30px;
+  height: 25px;
+  float: left;
+  margin: 0 5px 0 0;
+  vertical-align: center;
+  color: white;
+}
+
+.profile-btn::before {
+  content: "";
+  background: url("assets/card-account-details-outline.svg");
+  width: 25px;
+  height: 25px;
+  float: left;
+  margin: 0 5px 0 0;
+  vertical-align: center;
+}
+
+.message-btn::before {
+  content: "";
+  background: url("assets/message-outline.svg");
+  width: 25px;
+  height: 25px;
+  float: left;
+  margin: 0 5px 0 0;
+  vertical-align: center;
+}
+
+.history-btn::before {
+  content: "";
+  background: url("assets/clock-outline.svg");
+  width: 25px;
+  height: 25px;
+  float: left;
+  margin: 0 5px 0 0;
+  vertical-align: center;
+}
+
+.task-btn::before {
+  content: "";
+  background: url("assets/calendar-check.svg");
+  width: 25px;
+  height: 25px;
+  float: left;
+  margin: 0 5px 0 0;
+  vertical-align: center;
+}
+
+.community-btn::before {
+  content: "";
+  background: url("assets/account-group-outline.svg");
+  width: 25px;
+  height: 25px;
+  float: left;
+  margin: 0 5px 0 0;
+  vertical-align: center;
+}
+
+.settings-btn::before {
+  content: "";
+  background: url("assets/cog-outline.svg");
+  width: 25px;
+  height: 25px;
+  float: left;
+  margin: 0 5px 0 0;
+  vertical-align: center;
+}
+
+.support-btn::before {
+  content: "";
+  background: url("assets/message-question-outline.svg");
+  width: 25px;
+  height: 25px;
+  float: left;
+  margin: 0 5px 0 0;
+  vertical-align: center;
+}
+
+.privacy-btn::before {
+  content: "";
+  background: url("assets/shield-check-outline.svg");
+  width: 25px;
+  height: 25px;
+  float: left;
+  margin: 0 5px 0 0;
+  vertical-align: center;
+}
+
 .app-content {
   display: grid;
   grid-template-rows: auto 1fr;
@@ -50,10 +142,45 @@ h1 {
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 3fr 2fr;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .ui-bar input {
   width: 95%;
+}
+
+.ui-bar--row-1 {
+  display: flex;
+  justify-content: end;
+}
+
+.alert-btn {
+  margin-right: 20px;
+}
+
+.alert-btn img {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+}
+
+.username-display {
+  font-size: 1.5rem;
+  font-weight: bold;
+  float: right;
+  justify-self: end;
+  margin-right: 40px;
+}
+
+.username-display::before {
+  content: "";
+  background: url("assets/cute-panda-with-coffee-cartoon-illustration-vector.webp");
+  width: 35px;
+  height: 35px;
+  float: left;
+  margin: 0 20px 0 0;
+  vertical-align: center;
+  border-radius: 100%;
 }
 
 .media-buttons {
@@ -87,6 +214,7 @@ h1 {
   display: grid;
   grid-template-columns: 2fr 1fr;
   justify-items: center;
+  padding-bottom: 30px;
 }
 
 .project-header {
@@ -94,7 +222,7 @@ h1 {
   justify-self: start;
   font-weight: bold;
   font-size: 1.25rem;
-  margin-left: 40px;
+  margin-left: 10px;
 }
 
 .project-content {
@@ -103,7 +231,82 @@ h1 {
   grid-template-columns: 1fr 1fr;
   gap: 30px;
   margin-right: 30px;
+  margin-left: 10px;
 }
+
+.card-header {
+  font-size: 1.35rem;
+  font-weight: bold;
+  color: black;
+}
+
+.project-card {
+  display: grid;
+  background-color: white;
+  border-radius: 5px;
+  border-left: solid;
+  border-color: #000080;
+  border-width: 7px;
+  padding: 30px 20px 10px 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: rgba(0, 0, 0, 0.75)
+}
+
+.card-btns {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  margin-bottom: 20px;
+}
+
+.favorite-btn {
+  background: none;
+  border: none;
+  cursor: hover;
+}
+
+.favorite-btn::after {
+  content: "";
+  background: url("assets/star-plus.svg");
+  width: 35px;
+  height: 35px;
+  float: left;
+  margin: 0 20px 0 0;
+  vertical-align: center;
+}
+
+.watch-btn {
+  background: none;
+  border: none;
+  cursor: hover;
+}
+
+.watch-btn::after {
+  content: "";
+  background: url("assets/eye-plus-outline.svg");
+  width: 35px;
+  height: 35px;
+  float: left;
+  margin: 0 20px 0 0;
+  vertical-align: center;
+}
+
+.fork-btn {
+  background: none;
+  border: none;
+  cursor: hover;
+}
+
+.fork-btn::after {
+  content: "";
+  background: url("assets/source-fork.svg");
+  width: 35px;
+  height: 35px;
+  float: left;
+  margin: 0 20px 0 0;
+  vertical-align: center;
+}
+
 
 .announce-header {
   grid-column: 2 / 3;
@@ -115,13 +318,57 @@ h1 {
 
 .content-col-3 {
   display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 50px;
 }
 
-.project-card {
+.announcement-section {
   background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-right: 50px;
   border-radius: 5px;
-  border-left: solid;
-  border-color: #000080;
-  border-width: 7px;
+  text-overflow: ellipsis;
   padding: 30px;
+  display: grid;
 }
+
+.announce-card-header {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: black;
+}
+
+.announcements {
+  border-bottom: solid;
+  border-color: #e2e8f0;
+  border-width: 2px;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.trending-section {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-right: 50px;
+  border-radius: 5px;
+  text-overflow: ellipsis;
+  padding: 30px;
+  display: grid;
+}
+
+.trending-section>p {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: black;
+}
+
+
+.trending-section a {
+  text-decoration: none;
+}
+
+.trending-section a:visited {
+  color: black;
+}
+

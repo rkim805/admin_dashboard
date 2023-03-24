@@ -9,18 +9,17 @@
     <div class="side-bar">
       <h1>Dashboard</h1>
       <ul class="nav-primary">
-        <li><button>Home</button></li>
-        <li><button>Profile</button></li>
-        <li><button>Tasks</button></li>
-        <li><button>Messages</button></li>
-        <li><button>History</button></li>
-        <li><button>Tasks</button></li>
-        <li><button>Communities</button></li>
+        <li><button class="home-btn">Home</button></li>
+        <li><button class="profile-btn">Profile</button></li>
+        <li><button class="message-btn">Messages</button></li>
+        <li><button class="history-btn">History</button></li>
+        <li><button class="task-btn">Tasks</button></li>
+        <li><button class="community-btn">Communities</button></li>
       </ul>
       <ul class="nav-secondary">
-        <li><button>Settings</button></li>
-        <li><button>Support</button></li>
-        <li><button>Privacy</button></li>
+        <li><button class="settings-btn">Settings</button></li>
+        <li><button class="support-btn">Support</button></li>
+        <li><button class="privacy-btn">Privacy</button></li>
       </ul>
     </div>
     <div class="app-content">
@@ -29,7 +28,10 @@
           <label for="search-query"></label>
           <input type="text" name="search-query">
         </div>
-        <span class="username-display">Morgan Oakley</span>
+        <span class="ui-bar--row-1">
+          <span class="alert-btn"><img src="assets/bell-ring-outline.svg"></span>
+          <span class="username-display">Morgan Oakley</span>
+        </span>
         <p>
           Hi there, <br/> Morgan Oakley (@morgan)
         </p>
@@ -48,6 +50,11 @@
               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat.</p>
+              <div class="card-btns">
+                <button class="favorite-btn"></button>
+                <button class="watch-btn"></button>
+                <button class="fork-btn"></button>
+              </div>
           </div>
           <div class="project-card card2">
             <p class="card-header">Impossible App</p>
@@ -55,6 +62,11 @@
               cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
               cupidatat non proident, sunt in culpa qui officia deserunt mollit 
               anim id est laborum.</p>
+              <div class="card-btns">
+                <button class="favorite-btn"></button>
+                <button class="watch-btn"></button>
+                <button class="fork-btn"></button>
+              </div>
           </div>
           <div class="project-card card3">
             <p class="card-header">Ad-Blocker</p>
@@ -63,12 +75,22 @@
               Nunc id cursus metus aliquam eleifend mi in nulla. Varius morbi 
               enim nunc faucibus a.
             </p>
+            <div class="card-btns">
+              <button class="favorite-btn"></button>
+              <button class="watch-btn"></button>
+              <button class="fork-btn"></button>
+            </div>
         </div>
           <div class="project-card">
             <p class="card-header">Less Cool Project</p>
             <p>Turpis egestas maecenas pharetra convallis posuere morbi leo 
               urna. Gravida dictum fusce ut placerat orci nulla. In est ante in
               nibh. Odio facilisis mauris sit amet.</p>
+              <div class="card-btns">
+                <button class="favorite-btn"></button>
+                <button class="watch-btn"></button>
+                <button class="fork-btn"></button>
+              </div>
           </div>
           <div class="project-card">
             <p class="card-header">Easy Peasy App</p>
@@ -78,12 +100,22 @@
               mattis pellentesque id nibh tortor id aliquet. Lacus luctus 
               accumsan tortor posuere ac ut.
             </p>
+            <div class="card-btns">
+              <button class="favorite-btn"></button>
+              <button class="watch-btn"></button>
+              <button class="fork-btn"></button>
+            </div>
           </div>
           <div class="project-card">
             <p class="card-header">Money Maker</p>
             <p>Non enim praesent elementum facilisis leo vel fringilla. 
               Ipsum a arcu cursus vitae congue mauris rhoncus. Nunc vel risus 
               commodo viverra maecenas accumsan lacus.</p>
+              <div class="card-btns">
+                <button class="favorite-btn"></button>
+                <button class="watch-btn"></button>
+                <button class="fork-btn"></button>
+              </div>
         </div>
         </div>
         <p class="announce-header">Announcements</p>
@@ -91,21 +123,25 @@
           <div class="announcement-section">
             <div class="announcements">
               <p class="announce-card-header">Site Maintenence</p>
-              <p>Arcu felis bibendum ut tristique et egestas quis ipsum.</p>
+              <p>Arcu felis bibendum ut tristique et egestas quis ipsum.
+                Arcu felis bibendum ut tristique et egestas quis ipsum.
+                Arcu felis bibendum ut tristique et egestas quis ipsum.
+              </p>
             </div>
             <div class="announcements">
               <p class="announce-card-header">Community Share Day</p>
               <p>Hendrerit gravida rutrum quisque non tellus orci ac auctor 
-                augue.</p>
+                augue.  Facilisis volutpat est velit egestas dui.</p>
             </div>
             <div class="announcements">
               <p class="announce-card-header">Updated Private Policy</p>
               <p>Netus et malesuada fames ac turpis egestas sed. Facilisis 
-                volutpat est velit egestas dui.</p>
+                volutpat est velit egestas dui. Facilisis volutpat est velit 
+                egestas dui.</p>
             </div>
           </div>
           <div class="trending-section">
-          <p>Trending</p>
+            <p>Trending</p>
           <div class="trending">
             <a href="">@tegan</a>
             <p>Super Cool Project</p>
